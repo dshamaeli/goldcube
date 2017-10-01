@@ -3,9 +3,9 @@
 
 //package declartion
 
-package goldcube;
+package goldCube;
 
-public class Goldcube
+public class GoldCube
 {	
 	//class fields
 	
@@ -14,7 +14,7 @@ public class Goldcube
 
 	//Constractor for new objects
 	
-	public Goldcube(float s,float p)
+	public GoldCube(float s,float p)
 	{
 		size = s;
 		price = p;
