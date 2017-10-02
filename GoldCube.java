@@ -29,7 +29,7 @@ public class GoldCube
 
 	//calculating value by multiplying the volume by price per cc
 	
-        public float value() 
+    	public float value() 
 	{
 		return volume() * price;
 	}	

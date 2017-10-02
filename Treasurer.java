@@ -1,5 +1,7 @@
 /** Author:Daniel Shamaeli, Student ID:201230464
- *  *  first assigment for COMP517*/
+ *  this is the first assigment for COMP517
+ *  git@github.com:dshamaeli/goldcube.git
+ *  */
 
 //impoert package to read data
 
@@ -16,8 +18,9 @@ public class Treasurer
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
-	    	GoldCube[] cube = new GoldCube[3];
-	//	int i=1;
+	    GoldCube[] goldCube = new GoldCube[3];
+
+		//this loop will get the size and price and sets them to the cube
 		for(int i=0, j = 1 ; i<3 ; i++, j++)
 		{
 			System.out.println("Please enter Size for cube number "+ j + ":");
@@ -25,8 +28,8 @@ public class Treasurer
 					
 			System.out.println("Please enter price for cube number " + j + ":");
 			price = input.nextFloat();
-
-			cube[i] = new GoldCube(size,price);
+		
+			goldCube[i] = new GoldCube(size,price);
 
 			//implement user prompt to continue
 		}
@@ -34,8 +37,8 @@ public class Treasurer
 
 		for(int i = 0 ,j = 1 ; i<3 ; i++, j++)
 		{
-			System.out.println("GoldCube No." + j + " Volume: " + cube[i].volume() +
-					" Price: " + cube[i].value());
+			System.out.println("GoldCube No." + j + " Volume: " + goldCube[i].volume() +
+					" Price: " + goldCube[i].value());
 		}
 	}	
 }
