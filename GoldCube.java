@@ -22,15 +22,15 @@ public class GoldCube
 	
 	//calculate volume by cubing golcube size
 	
-	public double volume()
+	public float volume()
 	{
-		return Math.pow(size,3);
+		return size*size*size;
 	}	
 
 	//calculating value by multiplying the volume by price per cc
 	
-        public double value() 
+        public float value() 
 	{
-		return size + price;
+		return size * price;
 	}	
 }

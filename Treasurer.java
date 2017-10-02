@@ -8,15 +8,20 @@ import goldCube.GoldCube;
 import java.util.Scanner;
 
 public class Treasurer
-{
-	private Scanner input = new Scanner(System.in);
+{	
+	/*	private Scanner input = new Scanner(System.in);
 	
 	private GoldCube[] cub = new GoldCube[3];
 	//boolean answer;
 	
-	//main methods
+	//main methods */
 	public static void main(String[] args)
 	{
+		GoldCube cube = new GoldCube(1,2);
+		System.out.println("volume: " + cube.volume());
+		System.out.println("Value: " + cube.value());
+	}
+/*	
 		int i;
 
 		for(i=0 ; i<3 ; i++)
@@ -38,5 +43,5 @@ public class Treasurer
 					" Price: " + cube[i].value);
 		}
 	}	
-
+*/
 }
