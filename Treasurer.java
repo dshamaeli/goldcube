@@ -9,39 +9,33 @@ import java.util.Scanner;
 
 public class Treasurer
 {	
-	/*	private Scanner input = new Scanner(System.in);
 	
-	private GoldCube[] cub = new GoldCube[3];
-	//boolean answer;
-	
+	private static float size;
+	private static float price;
 	//main methods */
 	public static void main(String[] args)
 	{
-		GoldCube cube = new GoldCube(1,2);
-		System.out.println("volume: " + cube.volume());
-		System.out.println("Value: " + cube.value());
-	}
-/*	
-		int i;
-
-		for(i=0 ; i<3 ; i++)
+		Scanner input = new Scanner(System.in);
+	    	GoldCube[] cube = new GoldCube[3];
+	//	int i=1;
+		for(int i=0, j = 1 ; i<3 ; i++, j++)
 		{
-			System.out.println("Please enter Size for cube number " + i + ":");
-			cube[i] = new GoldCube();
-			cube[i].size = input.nextfloat();
-			
-			System.out.println("Please enter price for cube number " + i + ":");
-			cube[i].price = input.nextfloat();
+			System.out.println("Please enter Size for cube number "+ j + ":");
+			size = input.nextFloat();
+					
+			System.out.println("Please enter price for cube number " + j + ":");
+			price = input.nextFloat();
+
+			cube[i] = new GoldCube(size,price);
 
 			//implement user prompt to continue
 		}
 		System.out.println("The Result is");
 
-		for( i=o ; i<3 ; i++)
+		for(int i = 0 ,j = 1 ; i<3 ; i++, j++)
 		{
-			System.out.println("GoldCube No." + i + " Volume: " + cube[i].volume() +
-					" Price: " + cube[i].value);
+			System.out.println("GoldCube No." + j + " Volume: " + cube[i].volume() +
+					" Price: " + cube[i].value());
 		}
 	}	
-*/
 }

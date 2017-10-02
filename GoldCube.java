@@ -31,6 +31,6 @@ public class GoldCube
 	
         public float value() 
 	{
-		return size * price;
+		return volume() * price;
 	}	
 }
