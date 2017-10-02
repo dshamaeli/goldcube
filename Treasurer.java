@@ -1,7 +1,7 @@
 /** Author:Daniel Shamaeli, Student ID:201230464
- *  this is the first assigment for COMP517
- *  git@github.com:dshamaeli/goldcube.git
- *  */
+    this is the first assigment for COMP517
+    git@github.com:dshamaeli/goldcube.git
+ */
 
 //impoert package to read data
 

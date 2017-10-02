@@ -1,5 +1,7 @@
 /** Author:Daniel Shamaeli, Student ID:201230464
- *  first assigment for COMP517*/
+    this is the first assigment for COMP517
+    git@github.com:dshamaeli/goldcube.git
+ */
 
 //package declartion
 
