@@ -16,10 +16,10 @@ public class GoldCube
 
 	//Constractor for new objects
 	
-	public GoldCube(float s,float p)
+	public GoldCube(float size, float price)
 	{
-		size = s;
-		price = p;
+		this.size = size;
+		this.price = price;
 	}
 	
 	//calculate volume by cubing golcube size
