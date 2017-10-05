@@ -25,7 +25,7 @@ public class Treasurer
 			//prompting user for gold cube price
 			System.out.println("Please enter "+ tag +" for cube No." + counter + " :");
 				
-			//check an see if input is a number
+			//check if input is a number
 			while(!input.hasNextFloat())  
 			{   
 				System.out.println("The gold-cube " + tag +" should be a positive number");
@@ -34,9 +34,8 @@ public class Treasurer
 
 			//geting use input
 			var = input.nextFloat();
-				
-		//check if input is positive	
-		}while(var <=0);  
+		}
+		while(var <=0); //checking unput until get a positive number
 
 		return var;
 	}
@@ -65,14 +64,14 @@ public class Treasurer
 			//Ceate a goldCube with given price and size
 			goldCube[i] = new GoldCube(size,price);
 
-			//print result for user
 		}
 
+		//print result for user
 		for(int i = 0 ,j = 1 ; i<3 ; i++, j++)
 		{
 			System.out.println("**************************");
 			System.out.println("GoldCube No." + j + "\nVolume: " + goldCube[i].volume() +" cc"
-			 + "\nPrice: " + goldCube[i].value()+" £\n");
-					}
+			 					+ "\nPrice: " + goldCube[i].value()+" £\n");
+		}
 	}
 }
