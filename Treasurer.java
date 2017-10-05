@@ -10,8 +10,8 @@ import goldCube.GoldCube;
 import java.util.Scanner;
 
 public class Treasurer
-{	
-	
+{
+
 	private static float size;
 	private static float price;
 	//main methods */
@@ -22,12 +22,29 @@ public class Treasurer
 
 		//this loop will get the size and price and sets them to the cube
 		for(int i=0, j = 1 ; i<3 ; i++, j++)
-		{
-			System.out.println("Please enter Size for cube number "+ j + ":");
+		{	
+			
+			//validating user input
+			do
+			{   
+				//prompting user for gold cube price
+				System.out.println("Please enter price for cube number " + j + "(per cc):");
+				
+				//check an see if input is a number
+				while(!input.hasNextFloat())  
+				{   
+					System.out.println("the price should be a positive number");
+					input.next();
+				}
+
+				//geting use input
+				price = input.nextFloat();
+				
+			}while(price <=0); 
+			
+			System.out.println("Please enter Size cube number "+ j + "(cm):");
+			//validating user input	
 			size = input.nextFloat();
-					
-			System.out.println("Please enter price for cube number " + j + ":");
-			price = input.nextFloat();
 		
 			goldCube[i] = new GoldCube(size,price);
 
@@ -37,8 +54,8 @@ public class Treasurer
 
 		for(int i = 0 ,j = 1 ; i<3 ; i++, j++)
 		{
-			System.out.println("GoldCube No." + j + " Volume: " + goldCube[i].volume() +
-					" Price: " + goldCube[i].value());
+			System.out.println("GoldCube No." + j + " Volume: " + goldCube[i].volume()
+			 + " Price: " + goldCube[i].value());
 		}
-	}	
+	}
 }
